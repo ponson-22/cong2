@@ -1,35 +1,58 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title> Pogi si Jiro </title>
-<style>   
+  <title> Analog Horror </title>
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+  <style>
+      body {
+          background: url('dd.webp') no-repeat center center fixed;
+          background-size: cover;
+      }
 
-body {
-  background-color: lightblue;
-  }
-  
-h1 {
-   color: white;
-  text-align: center;
-  }
-  
-p {
-  font-family: verdana;
-  font-size: 20px;
-  }
-  
-</style>
+      h1 {
+          font-family: 'Pixelify Sans', cursive;
+          font-size: 70px;
+          color: #ba0000;
+          text-align: center;
+      }
+      p  {
+          font-family: 'Pixelify Sans', cursive;
+          font-size: 40px;
+          color: #f94848;
+          text-align: center;
+      }
+      #demo1 a {
+        color: #dadada; /* Blood Red */
+        text-decoration: none; /* Remove underline */
+        font-weight: bold;
+}
+
+    #demo1 a:hover {
+        color: #980303; /* Sickly Green */
+        text-shadow: 2px 2px 8px rgba(107, 142, 35, 0.7);
+}
+
+  </style>
 </head>
 <body>
+
+    <h1> Echoes of the Forgotten </h1>
+    <p> In a world where memories fade and shadows whisper, one man awakens in a cold, forgotten cell with no recollection of how he got there—only the burning desire to escape and uncover the truth that haunts him. <code></p>
+
+    <p id="demo1"></p> 
+    <p id="demo2"></p>
+
+    <script>
+        window.onload = function () {
+            let text = "Click here to Play";
+            
+            let result = text.link("Echoes of the Forgotten.html");
+            document.getElementById("demo1").innerHTML = result;
+
+            
+        };
+    </script>
+
 </body>
 </html>
-<body>
 
-<h1> I'm Hungry </h1>
-<p>Libre niyo ko</p>
-  <button type="button"
-  onclick="document.getElementById('demo').innerHTML = Date()">
-  Click me to display Date and Time.</button>
-
-  <p id="demo"></p>
-</body>
